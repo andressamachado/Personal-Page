@@ -32,6 +32,36 @@
         <a href="">/cover-letter</a>
         <a href="" class="contact-button"> <i class="fa-solid fa-phone" style="margin-right: 2px;"></i> contact</a>
       </nav>
+
+      <!-- Navbar for 638px and under screens -->
+      <div class="mobile-navbar"> 
+      <!-- Contact card and Logo -->
+      <div class="mobile-navbar-left">
+        <a class="mobile-contact-button" href=""> 
+          <i class="fa-solid fa-phone"></i> contact
+        </a>
+
+        <a class="mobile-header-logo" href="">I, A.Machado 
+          <span class="blinking-char">_</span>
+        </a>
+      </div>
+
+      <!-- Mobile dropdown menu -->
+      <div class="mobile-dropdown-menu" onclick="toggleMobileMenu(this)"> 
+        <div class="mobile-hamburger-icon"> 
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div class="mobile-menu">
+          <div> <a href="">/about-me</a> </div>
+          <div> <a href="">/resume</a> </div>
+          <div> <a href="">/cover-letter</a> </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- script to open the dropdown menu on mobile screen -->
+    <script src="../scripts/header.js"></script>
     </header>
   </body>
 </html>

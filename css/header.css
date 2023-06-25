@@ -50,3 +50,117 @@
 a.contact-button:hover {
   color: #a49d99;
 }
+
+/* MOBILE MENU */
+
+/* Mobile screen sizes hidden and displayed elements  */
+@media (max-width: 638px) {
+  .header-logo, .header-nav, .contact-button {
+    display: none;
+  }
+
+  .mobile-hamburger-menu {
+    display:flex;
+    justify-content: end;
+    box-sizing: border-box;
+    width: 100%;
+  }
+}
+
+.mobile-navbar {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.mobile-contact-button {
+  text-decoration: none;
+  color: #9f9895;
+  border: 1px solid #bbb5b2;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  background-color: #ffffffa8;
+  box-shadow: 6px 4px #9f9895;
+  padding: 10px 18px;
+}
+
+.mobile-header-logo {
+  text-decoration: none;
+  font-size: 35px; 
+  font-family: 'Imbue', serif;
+  color: #726c69;
+  margin-left: 15px;
+}
+
+.mobile-hamburger-icon {
+  font-size: 32px;
+  display: flex;
+  align-items: start;
+  color: #9f9895;
+  margin-top: 5px;
+}
+
+.mobile-menu {
+  display: none;  
+}
+
+.open .mobile-menu {
+  position: absolute;
+  left: -8px;
+  top: 10vh;
+  border-bottom: 2px solid #9d9996;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 15px;
+  box-shadow: 0px 15px #b8b1aeaa;
+}
+
+.mobile-menu div {
+  width: 100vw;
+  height: 5vh;
+  font-family: 'Playfair Display', serif;
+  display: flex;
+  justify-content: center;
+  background-color: #fff8f4;
+}
+
+.mobile-menu div a {
+  text-decoration: none;
+  color: #8f8985;
+}
+
+.mobile-menu div:first-child {
+  margin-top: 15px;
+  padding-top: 15px;
+}
+
+.mobile-menu div:last-child {
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+/* Medium screen sizes */
+@media (min-width: 638px) {
+  .mobile-navbar {
+    display: none;
+  }
+}
+
+
+/* Large screen sizes  */
+@media (min-width: 1080px) {
+  .mobile-navbar {
+    display: none;
+  }
+
+  #header {
+    display: flex;
+    justify-content: space-around;
+  }
+}
