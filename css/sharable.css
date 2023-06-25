@@ -1,0 +1,25 @@
+/* SHAREABLE STYLING */
+
+/* Blinking underbar ( _ ) for header and footer logo */
+.blinking-char {
+  font-family: 'Imbue', serif;
+  font-weight: 800;
+  color: rgb(148, 145, 145);
+  animation: blinker 2s infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Shadow for header and footer border */
+.shadow:before {
+  content:"";
+  position: absolute;
+  inset: -20px;
+  transform: translate3d(-10px, -20px, -30px);
+  background: #e9dad49e;
+  filter: blur(30px);
+}
