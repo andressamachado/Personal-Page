@@ -1,0 +1,46 @@
+/* HERO SECTION STYLING */
+
+#hero {
+  height: 90vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 7%;
+}
+
+.hero-text {
+  font-family: 'Gloock', serif;
+  margin: 5% 0px 0px 5%;
+}
+
+/* Ilustrate html tags */
+#hero-typewrited-msg .text-tags,
+.hero-text .text-tags {
+  font-size: 15px;
+  font-family: 'Poppins';
+  color: rgb(196, 178, 178);
+}
+
+.hero-text > h1 {
+  display: inline;
+  font-size:40px;
+  color: #d98c19;
+}
+
+#hero-typewrited-msg {
+  font-size: 25px;
+  letter-spacing: 1px;
+  color: #6d6464;
+}
+
+.hero-img {
+  height: 75%;
+  width: auto;
+  transform: scaleX(-1);
+  align-self: self-end;
+  margin-bottom: 8%;
+  margin-right: 2%;
+}
+
+    
