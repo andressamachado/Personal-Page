@@ -15,8 +15,7 @@
 }
 
 /* Ilustrate html tags */
-#hero-typewrited-msg .text-tags,
-.hero-text .text-tags {
+#hero-typewrited-msg .text-tags, .hero-text .text-tags {
   font-size: 15px;
   font-family: 'Poppins';
   color: rgb(196, 178, 178);
@@ -41,6 +40,38 @@
   align-self: self-end;
   margin-bottom: 8%;
   margin-right: 2%;
+}
+
+/* MOBILE MENU */
+
+/* Mobile screen sizes hidden and displayed elements  */
+@media (max-width: 638px) {
+  #hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .hero-text {
+    position: relative;
+    top: 7%;
+  }
+
+  .hero-text > h1 {
+    font-size:25px;
+  }
+
+  #hero-typewrited-msg {
+    font-size: 15px;
+  }
+
+  .hero-img {
+    height: 62%;
+    position: relative;
+    left: 40px;
+    bottom: 5px;
+    z-index: -2;
+  }
 }
 
     
