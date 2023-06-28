@@ -83,11 +83,11 @@
   .footer-navbar {
     font-size: 16px;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: end;
   }
 
-  .footer-navbar > a {
+  .footer-nav-items > a {
     padding-right: 0px;
     margin-left: 15px
   }

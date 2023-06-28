@@ -108,7 +108,7 @@ a.contact-button:hover {
 
 .open .mobile-menu {
   position: absolute;
-  left: -8px;
+  left: -1px;
   top: 10vh;
   border-bottom: 2px solid #9d9996;
   border-bottom-left-radius: 30px;
@@ -136,8 +136,7 @@ a.contact-button:hover {
 }
 
 .mobile-menu div:first-child {
-  margin-top: 15px;
-  padding-top: 15px;
+  margin-top: 30px;
 }
 
 .mobile-menu div:last-child {
