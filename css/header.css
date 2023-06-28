@@ -144,13 +144,34 @@ a.contact-button:hover {
   border-bottom-right-radius: 30px;
 }
 
+/* Narrow screens like Galaxy fold */
+@media (max-width: 334px) {
+  .mobile-contact-button {
+    font-size: 15px;
+    box-shadow: 6px 2px #9f9895;
+    padding: 5px 10px;
+  }
+
+  .mobile-header-logo {
+    font-size: 25px;
+  }
+
+  .mobile-hamburger-icon {
+    font-size: 28px;
+  }
+
+  .open .mobile-menu {
+    left: 1px;
+  }
+
+}
+
 /* Medium screen sizes */
 @media (min-width: 638px) {
   .mobile-navbar {
     display: none;
   }
 }
-
 
 /* Large screen sizes  */
 @media (min-width: 1080px) {
