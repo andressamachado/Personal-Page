@@ -4,9 +4,9 @@
   height: 90vh;
   width: 100vw;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
   padding-top: 7%;
+  overflow: hidden;
 }
 
 .hero-text {
@@ -18,118 +18,103 @@
 #hero-typewrited-msg .text-tags, .hero-text .text-tags {
   font-size: 15px;
   font-family: 'Poppins';
-  color: rgb(196, 178, 178);
+  color: rgb(220, 205, 205);
 }
 
 .hero-text > h1 {
   display: inline;
-  font-size:40px;
-  color: #d98c19;
+  font-size: 40px;
+  color: #d98c19d0;
 }
 
 #hero-typewrited-msg {
   font-size: 25px;
   letter-spacing: 1px;
-  color: #6d6464;
+  color: #beacac;
 }
 
 .hero-img {
-  width: 120%;
-  height: auto;
+  z-index: -1;
   transform: scaleX(-1);
-  align-self: self-end;
-  margin-bottom: 8%;
-  margin-right: 2%;
   position: absolute;
-  bottom: 5%;
-  left: 10%;
+  max-height: 60%;
+  right: 0px;
+  bottom: 0px;
 }
 
 /* MOBILE Screens */
 
-/* General adjustments for mobile screens */
-@media (max-width: 638px) {
-  #hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    overflow: hidden;
-  }
-
+/* General adjustments for screens up to 500px */
+@media (max-width: 550px) {
   .hero-text {
-    z-index: -1;
-    max-width: 100vw;
-    position: relative;
-    top: 7%;
-    margin-left: 4px;
+    margin: 10% 0px 10% 2%;
   }
 
   .hero-text > h1 {
-    font-size: 22px;
+    font-size: 25px;
   }
 
   #hero-typewrited-msg {
-    font-size: 16px;
-  }
-
-  #hero-typewrited-msg .text-tags, .hero-text .text-tags {
-    font-size: 12px;
+    font-size: 18px;
   }
 
   .hero-img {
-    z-index: -2;
     width: 100%;
-    height: auto;
-    position: relative;
-    bottom: 8%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+/* Galaxy Fold and similars */
+@media (max-width: 280px) {
+  .hero-text > h1 {
+    font-size: 20px;
+  }
+
+  /* Ilustrate html tags */
+  #hero-typewrited-msg .text-tags, .hero-text .text-tags {
+    font-size: 10px;
+  }
+
+  #hero-typewrited-msg {
+    font-size: 12px;
   }
 }
 
 /* Samsung Galaxy S8+ and similars */
-@media (min-width: 360px) {
-  .hero-img {
-    width: 110%;
-    height: auto;
-    bottom: 5%;
-    left: 10%;
+@media (max-width: 360px) {
+  #hero-typewrited-msg {
+    font-size: 15px;
   }
 }
 
 /* Iphone SE and similars */
-@media (min-width: 375px) {
-  .hero-img {
-    width: 110%;
-    height: auto;
-    bottom: 2%;
+@media (max-width: 375px) {
+  #hero-typewrited-msg {
+    font-size: 15px;
   }
 }
 
 /* Iphone 12 Pro and similars */
-@media (min-width: 390px) {
-  .hero-img {
-    width: 120%;
-    height: auto;
-    bottom: 5%;
-    left: 10%;
-  }
-
-  .hero-text {
-    margin-top: 10%;
-    margin-left: 2%;
+@media (max-width: 390px) {
+  /* Ilustrate html tags */
+  #hero-typewrited-msg .text-tags, .hero-text .text-tags {
+    font-size: 12px;
   }
 }
 
-  /* Iphone XR and similars */
-  @media (min-width: 412px) {
-  .hero-img {
-    width: 130%;
-    height: auto;
-    bottom: 2%;
-    left: 18%;
-  }
-
+/* Iphone XR and similars */ 
+@media (max-width: 414px){
   .hero-text {
-    margin-top: 10%;
-    margin-left: 2%;
+    margin-top: 15%;
+  }
+}
+
+/* Surface duo and similars*/
+@media (min-width: 540px) {
+  .hero-img {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
   }
 }
