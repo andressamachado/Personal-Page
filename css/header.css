@@ -6,6 +6,7 @@
   justify-content: space-between;
   padding: 10px;
   transform-style: preserve-3d;
+  margin: 0% 5% 0% 5%;
 }
 
 .header-logo {
@@ -175,12 +176,4 @@ a.contact-button:hover {
 
 /* Large screen sizes  */
 @media (min-width: 1080px) {
-  .mobile-navbar {
-    display: none;
-  }
-
-  #header {
-    display: flex;
-    justify-content: space-around;
-  }
 }
