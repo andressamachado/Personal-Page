@@ -118,3 +118,26 @@
     object-fit: cover;
   }
 }
+
+/* MEDIUM and LARGE screens */
+
+@media (min-width: 541px) {
+  /* Ilustrate html tags */
+  #hero-typewrited-msg .text-tags, .hero-text .text-tags {
+    font-size: 25px;
+  }
+
+  .hero-text > h1 {
+    font-size: 45px;
+  }
+
+  #hero-typewrited-msg {
+    font-size: 35px;
+  }
+
+  .hero-img {
+    width: auto;
+    height: 70%;
+    object-fit: cover;
+  }
+}
