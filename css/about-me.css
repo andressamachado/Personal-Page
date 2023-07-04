@@ -1,0 +1,64 @@
+#about-me {
+  height: 105vh;
+  width: 100vw;
+  background-color: #f9f8f6;
+  background-image: url("../images/about-me-bg.jpg");
+  background-size: 100% 100%;
+  overflow: hidden;
+}
+
+.about-me-title {
+  width: 100vw;
+  height: 10vh;
+  margin: 10vh 0 10vh 0;
+  text-align: center;
+  font-family: 'Gloock', serif;
+  font-size: 50px;
+  color: #dead4b;
+}
+
+.about-me-body {
+  height: 70vh;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-evenly;
+  align-items:center;
+  margin-bottom: 20vh;
+}
+
+.card {
+  height: 500px;
+  width: 400px;
+  background-color: #eaeceadd;
+  padding: 20px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.is-rounded {
+  border: solid black 1px;
+  border-radius: 3%;
+}
+
+.has-shadow {
+  box-shadow: 20px 20px 30px 0 rgba(145, 145, 145, 0.5);
+}
+
+.card-heading {
+  text-align: center;
+  font-size: 30px;
+}
+
+.card-description {
+  font-size: 20px;
+}
+
+.image-card {
+  overflow: hidden;
+}
+
+.image-card img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
