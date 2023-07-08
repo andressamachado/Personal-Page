@@ -1,0 +1,95 @@
+.resume-header {
+  background-color: #b48f62;
+  background-image: url("../images/birds.png");
+  background-size: 25% auto;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  padding: 5% 2% 5% 2%
+}
+
+.resume-header .text-tags {
+  font-size: 13px;
+  font-family: 'Poppins';
+  color: #e1b981;
+}
+
+.resume-header .name, .title {
+  font-family: 'Gloock', serif;
+  display: inline;
+  font-size: 40px;
+  color: #41291d;
+}
+
+.resume-header .title {
+  font-size: 25px;
+  color: #654f34;
+}
+
+.introduction {
+  margin-top: 4%;
+  text-align:justify;
+  font-size: 18px;
+}
+
+.resume-subheader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 4% 2% 4% 2%;
+  background-color: #b48f62a0;
+  font-size: 20px;
+}
+
+.contact-info {
+  color: #4c422d;
+}
+
+.location {
+  margin-bottom: 10px;
+}
+
+.location i {
+  margin-left: 4px;
+  margin-right: 2px;
+}
+
+.personal-info {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+}
+
+.personal-info .email {
+  margin-left: 2px;
+  margin-right: 20px;
+}
+
+.personal-info .phone {
+font-size: 17px;
+}
+
+.portfolio{
+  display: flex;
+  flex-direction: row;
+  font-size: 45px;
+}
+
+.portfolio div a {
+  color: #654f34;
+  display: flex;
+  align-content: end;
+  text-decoration: none;
+}
+
+.portfolio div {
+  margin-left: 10px;
+}
+
+.portfolio .linkedin a:hover {
+  color: rgb(11,101,195);
+}
+
+.portfolio .github-dev a:hover {
+  color: rgb(0, 0, 0);
+}
