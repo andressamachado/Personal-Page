@@ -204,3 +204,9 @@ font-size: 17px;
 .italic {
   font-style: italic;
 }
+
+.color-highlight {
+  background-color: #b5a68636;
+  border-radius: 25px;
+  padding-top: 3%;
+}
