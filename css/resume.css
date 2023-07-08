@@ -108,7 +108,7 @@ font-size: 17px;
 }
 
 .portfolio .linkedin a:hover {
-  color: rgb(11,101,195);
+  color: #0a63c2;
 }
 
 .portfolio .github-dev a:hover {
@@ -149,6 +149,17 @@ font-size: 17px;
 /* EDUCATION AND TRAINING */
 .education {
   margin-top: 2%;
+}
+
+.education a {
+  text-decoration: none; 
+  color: #326498;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.education li {
+  margin-bottom: 1%;
 }
 
 /* COMPONENTS */
