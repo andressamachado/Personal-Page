@@ -1,3 +1,10 @@
+#resume {
+  height: 105vh;
+  width: 100vw;
+  background-color: #f9f8f6;
+  overflow: hidden;
+}
+
 .resume-header {
   background-color: #b48f62;
   background-image: url("../images/birds.png");
@@ -26,9 +33,10 @@
 }
 
 .introduction {
+  font-family: 'Playfair Display', serif;
   margin-top: 4%;
   text-align:justify;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .resume-subheader {
@@ -42,7 +50,9 @@
 }
 
 .contact-info {
+  font-family: 'Gloock', serif;
   color: #4c422d;
+  font-size: 18px;
 }
 
 .location {
@@ -51,9 +61,12 @@
 
 .location i {
   margin-left: 4px;
-  margin-right: 2px;
+  margin-right: 4px;
 }
 
+.email i {
+  margin-right: 4px;
+}
 .personal-info {
   display: flex;
   flex-direction: row;
