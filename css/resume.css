@@ -1,0 +1,239 @@
+#resume {
+  width: 100vw;
+  background-color: #f9f8f6;
+  overflow: hidden;
+}
+
+/* RESUME HEADER /*
+
+/* Resume`s first section header - presentation */
+.resume-header {
+  background-color: #b48f62;
+  background-image: url("../images/birds.png");
+  background-size: 25% auto;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  padding: 5% 2% 5% 2%
+}
+
+.text-tags {
+  font-size: 13px;
+  font-family: 'Poppins';
+  color: #e1b981;
+}
+
+.name, .title {
+  font-family: 'Gloock', serif;
+  display: inline;
+  font-size: 40px;
+  color: #41291d;
+}
+
+.title {
+  font-size: 25px;
+  color: #654f34;
+}
+
+.introduction {
+  font-family: 'Playfair Display', serif;
+  margin-top: 4%;
+  text-align:justify;
+  font-size: 16px;
+}
+
+/* Resume`s second section header - contact info & social media */ 
+.resume-subheader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 4% 2% 4% 2%;
+  background-color: #b48f62a0;
+  font-size: 20px;
+  margin-bottom: 5%;
+}
+
+/* Location, email & phone number */
+.contact-info {
+  font-family: 'Gloock', serif;
+  color: #4c422d;
+  font-size: 18px;
+}
+
+.location {
+  margin-bottom: 10px;
+}
+
+.location i {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+/* email and phone */
+.personal-info {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+}
+
+.email i {
+  margin-right: 4px;
+}
+
+.email {
+  margin-left: 2px;
+  margin-right: 20px;
+}
+
+.phone {
+font-size: 17px;
+}
+
+/* social medias */ 
+.portfolio {
+  display: flex;
+  flex-direction: row;
+  font-size: 45px;
+}
+
+.portfolio div {
+  margin-left: 10px;
+}
+
+.portfolio div a {
+  color: #654f34;
+  display: flex;
+  align-content: end;
+  text-decoration: none;
+}
+
+.portfolio .linkedin a:hover {
+  color: #0a63c2;
+}
+
+.portfolio .github-dev a:hover {
+  color: rgb(0, 0, 0);
+}
+
+/* RESUME BODY */
+.resume-body {
+  margin: 0 2% 2% 2%;
+}
+
+/* WORK EXPERIENCE */
+.work-experience {
+  margin-top: 2%;
+}
+
+.achievements-list {
+  font-size: 17px;
+}
+
+.achievements-list li {
+  margin-top: 10px;
+}
+
+/* TECHNOLOGY SKILL SET */
+.technologies div {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
+.technologies img{
+  width: 7%;
+  filter: grayscale(80%);
+  margin-right: 2%;
+}
+
+/* EDUCATION AND TRAINING */
+.education {
+  margin-top: 2%;
+}
+
+.education a {
+  text-decoration: none; 
+  color: #326498;
+  font-weight: bold;
+}
+
+.education li {
+  margin-bottom: 1%;
+}
+
+/* PERSONAL PROJECTS */
+.personal-project {
+  margin-top: 2%;
+}
+
+.project-logos img{
+  height: 50px;
+  width: auto;
+  filter: grayscale(50%);
+}
+
+.personal-project li a{
+  text-decoration: none;
+  font-weight: bold;
+  color: #0e6184;
+}
+
+/* COMPONENTS */
+
+.section-title {
+  font-family: 'Gloock', serif;
+  font-size: 30px;
+  color: #41291d;
+  background-color: #9b8a665c;
+  width: 100%;
+  height: 15px;
+  position: relative;
+  margin-top: 5%;
+}
+
+.section-divider {
+  border: 2px solid #9b8a66c8;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-top: none;
+  padding: 2%;
+}
+
+.space-between {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.space-between p {
+  margin-top: 0px;
+}
+
+.section-h2 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.section-h3 {
+  font-weight: lighter;
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+
+.highlight {
+  color: #9b8a66;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.color-highlight {
+  background-color: #b5a68636;
+  border-radius: 25px;
+  padding-top: 3%;
+}
