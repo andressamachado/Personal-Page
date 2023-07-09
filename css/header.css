@@ -1,12 +1,23 @@
 /* HEADER STYLING */ 
 
 #header {
+  z-index: 2;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  padding: 10px;
-  transform-style: preserve-3d;
-  margin: 0% 5% 0% 5%;
+  background-color: #f3e6e0;
+  padding: 0% 5% 0% 5%;
+}
+
+.header-navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header-logo {
@@ -16,30 +27,37 @@
   color: #60605a;
 }
 
-.header-nav {
+.header-nav-items {
   font-family: 'Playfair Display', serif;
   font-size: 16px;
   letter-spacing: 0px;
 }
 
-.header-nav > a {
+.header-nav-items > a {
   text-decoration: none;
   color: #8f8985;
   margin-left: 10px;
 } 
 
-.header-nav > a:hover {
+.header-nav-items > a:hover {
   color: #b9b1ad;
   text-decoration: none;
 }
 
 .contact-button {
-  font-size: 16px;
-  color: #bbb5b2;
+  justify-content: right;
+  align-self: center;
   background-color: #ffffffa8;
   border: 1px solid #bbb5b2;
-  border-bottom-left-radius: 30px;
-  padding: 50px 18px 10px 18px;
+  border-radius: 30px;
+  padding: 5px 18px 5px 18px;
+}
+
+.contact-button a{
+  font-size: 16px;
+  color: #bbb5b2;
+  text-decoration: none;
+  justify-self: baseline;
 }
 
 .contact-button:hover {
@@ -56,7 +74,7 @@ a.contact-button:hover {
 
 /* Mobile screen sizes hidden and displayed elements  */
 @media (max-width: 638px) {
-  .header-logo, .header-nav, .contact-button {
+  .header-logo, .header-nav-items, .contact-button {
     display: none;
   }
 

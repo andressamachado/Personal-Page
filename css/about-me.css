@@ -1,10 +1,11 @@
 #about-me {
-  height: 105vh;
   width: 100vw;
   background-color: #f9f8f6;
   background-image: url("../images/about-me-bg.jpg");
-  background-size: 100% 100%;
   overflow: hidden;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
 }
 
 .about-me-title {
