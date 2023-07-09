@@ -155,11 +155,27 @@ font-size: 17px;
   text-decoration: none; 
   color: #326498;
   font-weight: bold;
-  font-size: 17px;
 }
 
 .education li {
   margin-bottom: 1%;
+}
+
+/* PERSONAL PROJECTS */
+.personal-project {
+  margin-top: 2%;
+}
+
+.project-logos img{
+  height: 50px;
+  width: auto;
+  filter: grayscale(50%);
+}
+
+.personal-project li a{
+  text-decoration: none;
+  font-weight: bold;
+  color: #0e6184;
 }
 
 /* COMPONENTS */
