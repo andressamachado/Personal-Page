@@ -2,6 +2,7 @@
   width: 100vw;
   background-color: #f9f8f6;
   overflow: hidden;
+  padding-top: 10%;
 }
 
 /* RESUME HEADER /*
@@ -60,20 +61,13 @@
   font-size: 18px;
 }
 
-.location {
+.location, .phone  {
   margin-bottom: 10px;
 }
 
 .location i {
   margin-left: 4px;
   margin-right: 4px;
-}
-
-/* email and phone */
-.personal-info {
-  display: flex;
-  flex-direction: row;
-  align-items: end;
 }
 
 .email i {
@@ -237,3 +231,88 @@ font-size: 17px;
   border-radius: 25px;
   padding-top: 3%;
 }
+
+@media (max-width: 680px){
+  #resume {
+    padding-top: 10%;
+  }
+
+  /* Resume`s second section header - contact info & social media */ 
+  .portfolio {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 280px) and (max-width: 356px)  {
+  .resume-header {
+    padding-top: 15%;
+  }
+
+  .name {
+    font-size: 25px;
+  }
+
+  .title {
+    font-size: 23px;
+  }
+
+  .contact-info i {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 357px) and (max-width: 435px)  {
+  #resume {
+    padding-top: 15%;
+  }
+
+  .name {
+    font-size: 25px;
+  }
+
+  .title {
+    font-size: 23px;
+  }
+}
+
+@media only screen and (min-width: 436px) and (max-width: 520px)  {
+  .name{
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 400px){
+  .resume-subheader {
+    flex-direction: column;
+  }
+
+  .contact-info {
+    width: 100%;
+  }
+
+  .portfolio {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 5%;
+  }
+}
+
+@media (max-width: 280px){
+  .name {
+    font-size: 20px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .resume-subheader {
+    margin-bottom: 20%;
+  }
+
+  .contact-info {
+    font-size: 15px;
+  }
+}
+
