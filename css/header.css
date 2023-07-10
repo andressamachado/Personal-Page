@@ -196,7 +196,7 @@ a.contact-button:hover {
 }
 
 /* Medium screen sizes */
-@media (min-width: 638px) {
+@media (min-width: 639px) {
   .mobile-navbar {
     display: none;
   }
