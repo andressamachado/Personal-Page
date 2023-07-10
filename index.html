@@ -31,16 +31,26 @@
 
   <body>
      <!-- Header Navegation bar with logo-->
-    <header id="header" class="shadow">
-      <!-- Navbar logo -->
-      <a class="header-logo" href="#hero">I, A.Machado<span class="blinking-char">_</span></a>
-    
-      <!-- Navbar items -->
-      <nav class="header-nav">
-        <a href="#about-me">/about-me</a>
-        <a href="#resume">/resume</a>
-        <a href="" class="contact-button"> <i class="fa-solid fa-phone" style="margin-right: 2px;"></i> contact</a>
-      </nav>
+    <header id="header">
+        <div class="header-navbar">
+          <!-- Navbar logo -->
+          <a class="header-logo" href="#hero">I, A.Machado<span class="blinking-char">_</span></a>
+        </div>
+
+        <div class="header-nav-options">
+          <!-- Navbar items -->
+          <nav class="header-nav-items">
+            <a href="#about-me">/about-me</a>
+            <a href="#resume">/resume</a>
+          </nav>
+
+          <div class="contact-button">
+            <a href=""> 
+              <i class="fa-solid fa-phone" style="margin-right: 2px;"></i>
+              contact
+            </a>
+          </div>
+        </div>
 
       <!-- Navbar for 638px and under screens -->
       <div class="mobile-navbar"> 
@@ -62,9 +72,8 @@
         </div>
 
         <div class="mobile-menu">
-          <div> <a href="">/about-me</a> </div>
-          <div> <a href="">/resume</a> </div>
-          <div> <a href="">/cover-letter</a> </div>
+          <div> <a href="#about-me">/about-me</a> </div>
+          <div> <a href="#resume">/resume</a> </div>
         </div>
       </div>
     </div>
@@ -97,7 +106,33 @@
         <article class="card is-rounded has-shadow">
           <h3 class="card-heading"> who am I? 👀 </h3>
           <p class="card-description">
-              “We believe that traditional town planning and architecture have resulted in our most vibrant and beautiful spaces in the past and can help to enrich our communal and civic life”
+            Born and raised in Brazil, I am very proud of my culture, my roots and all the diversity we have.
+            <br/>
+            <br/>
+            Before starting my career in tech, I had my bachelors in Law where I had the chance to work in some projects like 
+            facilitating justice access to women with HIV/AIDS & STDs in low income families, and also participated in a local LGBTQIAPN+ NGO. 
+            <br/>
+            <br/>
+            Apart from that, I worked 2 yeas in a Law Society and 8 months as a volunteer as a District Attorney assistant. 
+            <br/>
+            <br/>
+            But honestly, as much as I enjoyed all of that, I was always a nerd 🤓 
+            <br/>
+            <br/>
+            2017 I had the chance to move to Canada, and that was all that I needed to change my career to tech. Till those days, every time someone asks me what I do for a living, my eyes shine and I still cannot believe that I am a Software Developer. That truly makes me very pleased.
+            <br/>
+            <br/>
+            I am also a MPB ( Popular Brazilian Song) lover, but also love Rock and Metal. Very ecletic 😅 
+            <br/>
+            <br/>
+            I love to be around friends to play some board games, going to the park with my dog, Jonas, and appreciate the nature.
+            <br/>
+            <br/>
+            That was a bit about me, feel free to shoot a message. 
+            <br/>
+            <br/>
+            Hope hearing from you soon.
+            Bye for now 👋🏻
           </p>
         </article>
 
@@ -144,17 +179,15 @@
             <i class="fa-solid fa-location-dot"></i>
             <spam> Ottawa, Ontario, Canada </spam>
           </div>
-            
-          <div class="personal-info"> 
-            <div class="email"> 
-              <i class="fa-solid fa-envelope"></i> 
-              <spam> andressa.pamachado@gmail.com </spam>
-            </div>
-  
-            <div class="phone"> 
-              <i class="fa-solid fa-phone"></i> 
-              <spam> +1 (613) 879-3799 </spam>
-            </div>
+
+          <div class="phone"> 
+            <i class="fa-solid fa-phone"></i> 
+            <spam> +1 (613) 879-3799 </spam>
+          </div>
+
+          <div class="email"> 
+            <i class="fa-solid fa-envelope"></i> 
+            <spam> andressa.pamachado@gmail.com </spam>
           </div>
         </div>
   
@@ -242,9 +275,9 @@
             
             <div class="section-divider color-highlight">
               <img src="images/logos/core/java.png" alt="Java">
-              <img src="images/logos/core/spring.png" alt="Spring Framework" style="height: 50px; width: auto;">
+              <img src="images/logos/core/spring.png" alt="Spring Framework">
               <img src="images/logos/core/ruby.png" alt="Ruby">
-              <img src="images/logos/core/rails.png" alt="Ruby on Rails" style="height: auto; width: 90px;">
+              <img src="images/logos/core/rails.png" alt="Ruby on Rails"">
               <img src="images/logos/core/docker.png" alt="Docker Containers">
               <img src="images/logos/core/kubernetes.png" alt="Kubernetes">
               <img src="images/logos/core/javascript.png" alt="JavaScript">
@@ -259,11 +292,11 @@
             <h2 class="section-title"> Others </h2>
             
             <div class="section-divider color-highlight">
-              <img src="images/logos/others/linux.png" alt="Linux" style="height: 50px; width: auto;">
-              <img src="images/logos/others/vagrant.png" alt="Vagrant" style="height: 50px; width: auto;">
+              <img src="images/logos/others/linux.png" alt="Linux">
+              <img src="images/logos/others/vagrant.png" alt="Vagrant">
               <img src="images/logos/others/redhat.png" alt="RedHat">
-              <img src="images/logos/others/openstack.png" alt="OpenStack" style="height: 50px; width: auto;">
-              <img src="images/logos/others/jenkins.png" alt="Jenkins" style="height: auto; width: 65px;">
+              <img src="images/logos/others/openstack.png" alt="OpenStack">
+              <img src="images/logos/others/jenkins.png" alt="Jenkins">
               <img src="images/logos/others/kafka.png" alt="Kafka">
               <img src="images/logos/others/postman.png" alt="Postman">
               <img src="images/logos/others/aws.png" alt="AWS">

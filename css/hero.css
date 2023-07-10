@@ -5,7 +5,7 @@
   width: 100vw;
   display: flex;
   flex-direction: column;
-  padding-top: 7%;
+  padding-top: 10%;
   overflow: hidden;
 }
 
@@ -67,6 +67,10 @@
 
 /* Galaxy Fold and similars */
 @media (max-width: 280px) {
+  #hero {
+    padding-top: 25%;
+  }
+  
   .hero-text > h1 {
     font-size: 20px;
   }
@@ -105,6 +109,10 @@
 
 /* Iphone XR and similars */ 
 @media (max-width: 414px){
+  #hero {
+    padding-top: 20%;
+  }
+  
   .hero-text {
     margin-top: 15%;
   }
