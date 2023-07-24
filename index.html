@@ -12,6 +12,8 @@
     <link rel="stylesheet" type="text/css" href="css/sharable.css"/>
     <!-- Header Style -->
     <link rel="stylesheet" type="text/css" href="css/header.css"/>
+    <!-- Modal Style -->
+    <link rel="stylesheet" type="text/css" href="css/modal.css"/>
     <!-- Hero Style -->
     <link rel="stylesheet" type="text/css" href="css/hero.css"/>
     <!-- About-me Style -->
@@ -32,54 +34,108 @@
   <body>
      <!-- Header Navegation bar with logo-->
     <header id="header">
-        <div class="header-navbar">
-          <!-- Navbar logo -->
-          <a class="header-logo" href="#hero">I, A.Machado<span class="blinking-char">_</span></a>
+      <div class="header-navbar">
+        <!-- Navbar logo -->
+        <a class="header-logo" href="#hero">I, A.Machado<span class="blinking-char">_</span></a>
+      </div>
+
+      <div class="header-nav-options">
+        <!-- Navbar items -->
+        <nav class="header-nav-items">
+          <a href="#about-me">/about-me</a>
+          <a href="#resume">/resume</a>
+        </nav>
+
+        <div class="contact-button">
+          <a id="contact-btn-modal"> <i class="fa-solid fa-phone" style="margin-right: 2px;"></i> contact </a>
         </div>
 
-        <div class="header-nav-options">
-          <!-- Navbar items -->
-          <nav class="header-nav-items">
-            <a href="#about-me">/about-me</a>
-            <a href="#resume">/resume</a>
-          </nav>
+        <!-- contact modal -->
+        <div id="contact-modal" class="modal">
 
-          <div class="contact-button">
-            <a href=""> 
-              <i class="fa-solid fa-phone" style="margin-right: 2px;"></i>
-              contact
-            </a>
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+
+            <a href="#hero" class="modal-logo"> I, A.M <span class="blinking-char">_</span> </a>
+
+            <div class="modal-body"> 
+              <!-- email -->
+              <div> 
+                <i class="footer-info-icon fa-solid fa-envelope"></i> 
+                <spam> andressa.pamachado@gmail.com </spam>
+              </div>
+  
+              <!-- phone -->
+              <div> 
+                <i class="footer-info-icon fa-solid fa-phone"></i> 
+                <spam> +1 (613) 879-3799 </spam>
+              </div>
+  
+              <!-- location -->
+              <div> 
+                <i class="footer-info-icon fa-solid fa-location-dot" style="margin-left: 3px;"></i>
+                <spam> Ottawa, Ontario - Canada </spam>
+              </div>
+
+              <div class="modal-portfolio">
+                <!-- Dev.to -->
+                <div class="footer-portfolio-icon">
+                  <a href="https://dev.to/andressa" title="Dev.to" target="_blank" style="font-size: 30px;">
+                    <i class="fa-brands fa-dev"></i>
+                  </a>
+                </div>
+    
+                <!-- linkedin -->
+                <div class="footer-portfolio-icon">
+                  <a href="https://www.linkedin.com/in/machado-andressa/" title="linkedIn" target="_blank" style="font-size: 30px;">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </a>
+                </div>
+    
+                <!-- GitHub -->
+                <div class="footer-portfolio-icon">
+                  <a href="https://github.com/andressamachado" title="GitHub" target="_blank" style="font-size: 30px;">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+      </div>
+
+      <!-- script to open contact modal -->
+      <script src="scripts/modal.js"></script>
 
       <!-- Navbar for 638px and under screens -->
       <div class="mobile-navbar"> 
-      <!-- Contact card and Logo -->
-      <div class="mobile-navbar-left">
-        <a class="mobile-contact-button" href=""> 
-          <i class="fa-solid fa-phone"></i> contact
-        </a>
+        <!-- Contact card and Logo -->
+        <div class="mobile-navbar-left">
+          <a class="mobile-contact-button" href=""> 
+            <i class="fa-solid fa-phone"></i> contact
+          </a>
 
-        <a class="mobile-header-logo" href="">I, A.Machado 
-          <span class="blinking-char">_</span>
-        </a>
-      </div>
-
-      <!-- Mobile dropdown menu -->
-      <div class="mobile-dropdown-menu" onclick="toggleMobileMenu(this)"> 
-        <div class="mobile-hamburger-icon"> 
-          <i class="fa-solid fa-bars"></i>
+          <a class="mobile-header-logo" href="">I, A.Machado 
+            <span class="blinking-char">_</span>
+          </a>
         </div>
 
-        <div class="mobile-menu">
-          <div> <a href="#about-me">/about-me</a> </div>
-          <div> <a href="#resume">/resume</a> </div>
+        <!-- Mobile dropdown menu -->
+        <div class="mobile-dropdown-menu" onclick="toggleMobileMenu(this)"> 
+          <div class="mobile-hamburger-icon"> 
+            <i class="fa-solid fa-bars"></i>
+          </div>
+
+          <div class="mobile-menu">
+            <div> <a href="#about-me">/about-me</a> </div>
+            <div> <a href="#resume">/resume</a> </div>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- script to open the dropdown menu on mobile screen -->
-    <script src="../scripts/header.js"></script>
+      <!-- script to open the dropdown menu on mobile screen -->
+      <script src="../scripts/header.js"></script>
     </header>
 
     <section id="hero">
